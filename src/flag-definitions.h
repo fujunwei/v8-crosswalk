@@ -149,6 +149,7 @@ struct MaybeBoolFlag {
 // Flags for language modes and experimental language features.
 DEFINE_BOOL(use_strict, false, "enforce strict mode")
 DEFINE_BOOL(es_staging, false, "enable upcoming ES6+ features")
+DEFINE_BOOL(simd_object, false, "enable SIMD object and operations")
 
 DEFINE_BOOL(harmony_scoping, false, "enable harmony block scoping")
 DEFINE_BOOL(harmony_modules, false,
