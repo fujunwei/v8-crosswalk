@@ -6112,7 +6112,7 @@ void LCodeGen::DoUnarySIMDOperation(LUnarySIMDOperation* instr) {
     case kInt32x4GetFlagY:
     case kInt32x4GetFlagZ:
     case kInt32x4GetFlagW: {
-      DCHECK(instr->hydrogen()->value()->representation().IsInt32x4()); 
+      DCHECK(instr->hydrogen()->value()->representation().IsInt32x4());
       bool flag = false;
       switch (instr->op()) {
         case kInt32x4GetFlagX:

@@ -4944,8 +4944,8 @@ SIMD_QUARTERNARY_OPERATIONS(SIMD_QUARTERNARY_OPERATION_CASE_ITEM)
 
 
 OStream& HQuarternarySIMDOperation::PrintDataTo(OStream& os) const {
-  return os << OpName() << " " << NameOf(x()) << " " << NameOf(y()) 
-            << " " << NameOf(z()) << " " << NameOf(w());
+  return os << OpName() << " " << NameOf(x()) << " " << NameOf(y()) << " "
+            << NameOf(z()) << " " << NameOf(w());
 }
 
 

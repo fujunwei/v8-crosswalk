@@ -976,7 +976,7 @@ class LNullarySIMDOperation V8_FINAL : public LTemplateInstruction<1, 0, 0> {
   virtual void CompileToNative(LCodeGen* generator) V8_OVERRIDE;
   virtual const char* Mnemonic() const V8_OVERRIDE;
   static LNullarySIMDOperation* cast(LInstruction* instr) {
-    ASSERT(instr->IsNullarySIMDOperation());
+    DCHECK(instr->IsNullarySIMDOperation());
     return reinterpret_cast<LNullarySIMDOperation*>(instr);
   }
 
@@ -1003,7 +1003,7 @@ class LUnarySIMDOperation V8_FINAL : public LTemplateInstruction<1, 1, 0> {
   virtual void CompileToNative(LCodeGen* generator) V8_OVERRIDE;
   virtual const char* Mnemonic() const V8_OVERRIDE;
   static LUnarySIMDOperation* cast(LInstruction* instr) {
-    ASSERT(instr->IsUnarySIMDOperation());
+    DCHECK(instr->IsUnarySIMDOperation());
     return reinterpret_cast<LUnarySIMDOperation*>(instr);
   }
 
@@ -1032,7 +1032,7 @@ class LBinarySIMDOperation V8_FINAL : public LTemplateInstruction<1, 2, 0> {
   virtual void CompileToNative(LCodeGen* generator) V8_OVERRIDE;
   virtual const char* Mnemonic() const V8_OVERRIDE;
   static LBinarySIMDOperation* cast(LInstruction* instr) {
-    ASSERT(instr->IsBinarySIMDOperation());
+    DCHECK(instr->IsBinarySIMDOperation());
     return reinterpret_cast<LBinarySIMDOperation*>(instr);
   }
 
@@ -1064,7 +1064,7 @@ class LTernarySIMDOperation V8_FINAL : public LTemplateInstruction<1, 3, 0> {
   virtual void CompileToNative(LCodeGen* generator) V8_OVERRIDE;
   virtual const char* Mnemonic() const V8_OVERRIDE;
   static LTernarySIMDOperation* cast(LInstruction* instr) {
-    ASSERT(instr->IsTernarySIMDOperation());
+    DCHECK(instr->IsTernarySIMDOperation());
     return reinterpret_cast<LTernarySIMDOperation*>(instr);
   }
 
@@ -1099,7 +1099,7 @@ class LQuarternarySIMDOperation V8_FINAL
   virtual void CompileToNative(LCodeGen* generator) V8_OVERRIDE;
   virtual const char* Mnemonic() const V8_OVERRIDE;
   static LQuarternarySIMDOperation* cast(LInstruction* instr) {
-    ASSERT(instr->IsQuarternarySIMDOperation());
+    DCHECK(instr->IsQuarternarySIMDOperation());
     return reinterpret_cast<LQuarternarySIMDOperation*>(instr);
   }
 
